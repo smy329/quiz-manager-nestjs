@@ -1,6 +1,6 @@
 import { IsNotEmpty, IsString, Length } from 'class-validator';
 
-export class CreateQuiDTO {
+export class CreateQuizDTO {
   @IsNotEmpty({ message: 'The quiz should have a title' })
   @IsString({ message: 'The title must be a string' })
   @Length(1, 100)
